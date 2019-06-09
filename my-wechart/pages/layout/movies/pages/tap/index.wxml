@@ -1,0 +1,3 @@
+<!--pages/layout/movies/tap/index.wxml-->
+<import src="../../template/grid/index" />
+<template is="grid" data="{{movies}}" />

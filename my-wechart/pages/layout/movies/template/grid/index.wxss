@@ -1,0 +1,4 @@
+@import "../row/item/index";
+.grid-wrap{
+  text-align: center;
+}

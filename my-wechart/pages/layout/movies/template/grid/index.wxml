@@ -1,0 +1,18 @@
+<import src="../row/item/index" />
+<template name="grid">
+  <view class='grid-wrap'>
+    <block wx:for="{{movies}}" wx:key="{{index}}">
+      <template class="grid-item" is="item" data="{{...item}}"></template>
+    </block>
+
+  <!-- 采用flex布局的居中方案,最后一行如果只有一个或者两个item,会平分富余空间,布局会乱 -->
+  <!-- 1.才可采用下面的方案,添加空白的item -->
+    <block>
+      <template wx:if="{{(movies.length % 3) === 2}}" is="item"></template>
+      <template wx:if="{{(movies.length % 3) === 1}}" is="item"></template>
+      <template wx:if="{{(movies.length % 3) === 1}}" is="item"></template>
+    </block> 
+
+    <!-- 2.给每个item设置宽度为33.333% -->
+  </view> 
+</template>

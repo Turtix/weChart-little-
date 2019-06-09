@@ -1,0 +1,42 @@
+/* pages/layout/launch/index.wxss */
+html,body,page{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background: pink;
+}
+.wrap .avatar{
+    width:150rpx;
+    height:150rpx;
+    margin-top:160rpx;
+    border-radius:50% ;
+}
+
+.wrap .name{
+    margin-top:150rpx;
+    font-size:32rpx;
+    font-weight:bold;
+}
+
+.moto-wrap{
+    margin-top:200rpx;
+    border:1px solid #405f80;
+    width:200rpx;
+    height:80rpx;
+    border-radius:5rpx;
+    text-align:center;
+}
+.moto{
+    font-size:22rpx;
+    font-weight:bold;
+    line-height:80rpx;
+    color:#405f80;
+}

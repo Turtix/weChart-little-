@@ -1,0 +1,9 @@
+<!--pages/layout/launch/index.wxml-->
+<view class="wrap">
+  <image class="avatar" src="./img/zdyAvatar.jpg"></image>
+  <text class="name">Hello 冬雨</text>
+  <view class="moto-wrap" >
+  <!-- 绑定跳转事件 -->
+    <text class="moto" bindtap="handleTap">开启小程序之旅</text>
+  </view>
+</view>

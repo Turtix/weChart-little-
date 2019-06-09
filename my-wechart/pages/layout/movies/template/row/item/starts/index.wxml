@@ -1,0 +1,16 @@
+
+<template name="starts">
+  <view class='stars-wrap'>
+    <view class='stars' >
+      <block wx:for="{{stars}}" wx:key="{{index}}">
+        <image src="{{item}}"></image>
+      </block>
+      <!-- <image src="/pages/layout/movies/img/stars/star24_on@2x.png"></image>
+      <image src="/pages/layout/movies/img/stars/star24_on@2x.png"></image>
+      <image src="/pages/layout/movies/img/stars/star24_on@2x.png"></image>
+      <image src="/pages/layout/movies/img/stars/star24_on@2x.png"></image>
+      <image src="/pages/layout/movies/img/stars/star24_on@2x.png"></image> -->
+    </view>
+    <text class='score'>{{score}}</text>
+  </view>
+</template>

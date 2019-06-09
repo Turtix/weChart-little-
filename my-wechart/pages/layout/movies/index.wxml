@@ -1,0 +1,11 @@
+<!--pages/layout/movies/index.wxml-->
+<import  src="./template/row/index"/>
+<view class='movies-wrap'>
+ <block wx:for="{{movies}}" wx:key="{{index}}" >
+  <template is="row"  data="{{...item}}"/>
+ </block>
+ 
+ 
+ <!-- <template is="row"/>
+ <template is="row"/> -->
+</view>

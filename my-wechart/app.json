@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/layout/movies/index",
+    "pages/layout/movies/pages/tap/index",
+    "pages/layout/main/index",
+    "pages/layout/main/detail/index",
+    "pages/layout/launch/index"
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#008000",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/layout/main/index",
+        "text": "程序首页",
+        "iconPath": "pages/layout/movies/img/movie.png",
+        "selectedIconPath": "pages/layout/movies/img/movie-hover.png"
+      },
+      {
+        "pagePath": "pages/layout/movies/index",
+        "text": "程序影院",
+        "iconPath": "pages/layout/movies/img/atguigu.png",
+        "selectedIconPath": "pages/layout/movies/img/atguigu-hover.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffc0cb",
+    "navigationBarTitleText": "我的小程序",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fffffff",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

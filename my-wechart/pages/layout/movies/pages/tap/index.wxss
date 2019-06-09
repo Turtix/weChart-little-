@@ -1,0 +1,2 @@
+/* pages/layout/movies/tap/index.wxss */
+@import '../../template/grid/index';

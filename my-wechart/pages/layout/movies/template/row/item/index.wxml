@@ -1,0 +1,8 @@
+<import src="./starts/index"/>
+<template name="item">
+  <view class='item-wrap'>
+    <image src="{{postImgUrl}}"></image>
+    <text >{{title}}</text>
+    <template  is="starts" data="{{score,stars}}"/> 
+  </view>
+</template>

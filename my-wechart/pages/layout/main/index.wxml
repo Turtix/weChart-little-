@@ -1,0 +1,68 @@
+<!--pages/layout/main(storage)/index.wxml-->
+<!-- 导入模板list -->
+<import src="./template/list.wxml" /> 
+<view class='main-wrap'>
+  <view class='head'>
+    <image src='./img/header/top.jpg'></image>
+  </view>
+  <swiper indicator-dots="true" indicator-color="pink" indicator-active-color="deeppink" autoplay="true" interval="2000"
+  duration="500" circular="true"  current="2" easing-function="easeInCubic">
+      <swiper-item>
+        <image src='./img/swiper/1.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='./img/swiper/2.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='./img/swiper/3.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='./img/swiper/4.jpg'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='./img/swiper/5.jpg'></image>
+      </swiper-item>
+  </swiper>
+  <view class='course'>
+    <view class='course-title'>
+      <text>{{data.listData.title}}</text>
+      <text>{{data.listData.title2}}</text>
+    </view>
+    <view class='course-list'>
+      <view class='item' wx:for="{{data.listData.courses}}" wx:key="{{index}}">
+        <image src="{{data.listData.courseUrls[index]}}"></image>
+        <text>{{item}}</text>
+      </view>
+      
+    </view>
+  </view>
+  <!-- 绑定事件方式二 -->
+  <!-- <view class='info' bind:tap='handleTap'  wx:for="{{data.templateDatas}}">
+    <text class='title1'>{{item.title}}</text>
+    <text class='title2'>{{item.title2}}</text>
+    <image src="{{item.src}}"></image>
+  </view> -->
+  <view bind:tap='handleTap' data-list-id="{{item.newsid}}" wx:for="{{data.templateDatas}}" wx:key="{{item.newsid}}">
+    <template is="list"  data="{{item}}"/>   
+  </view>
+   
+  <view class='footer'>
+    <view class='left'>
+      <image src="./img/info/info.jpg"></image>
+      <text>尚硅谷官方微信：atguigu</text>
+    </view>
+    <view class='right'>
+      <view>
+        <text>校区:</text>
+        <text>北京昌平区宏福科技园综合楼3层(北京)</text>
+        <text>深圳市宝安区西部硅谷大厦B座3层(深圳)</text>
+      </view>
+      <view>
+        <text>电话:</text>
+        <text>010-56253825(北京)</text>
+        <text>0755-85293825 (深圳)</text>
+      </view>
+    </view>
+  </view>
+</view>
+

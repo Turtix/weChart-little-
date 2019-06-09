@@ -1,0 +1,25 @@
+<import src="./item/index"/>
+<template name="row">
+<view class="row">
+   <view class='row-wrap'>
+    <view class='info'>
+      <text class='type'>{{type}}</text>
+      <view class='more' bindtap="toTypeMore" data-type="{{type}}">
+        <text class='more-text'>更多</text>
+        <icon type="download" size='16'></icon>
+      </view>
+    </view>
+    <view class="items">
+
+      <!-- <template is="item"/>
+      <template is="item"/>
+      <template is="item"/> -->
+      <block wx:for="{{arrangeArr}}" wx:key="{{index}}">
+        <template is="item" data="{{...item}}"/>
+      </block>
+
+    </view>
+   </view>
+</view>
+   
+</template>

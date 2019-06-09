@@ -1,0 +1,7 @@
+<template name="list">
+  <view class='info'>
+    <text class='title1'>{{item.title}}</text>
+    <text class='title2'>{{item.title2}}</text>
+    <image src="{{item.src}}"></image>
+  </view>
+</template>

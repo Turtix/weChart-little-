@@ -1,0 +1,21 @@
+@import "./starts/index";
+.item-wrap{
+  display: inline-flex;
+  flex-direction: column;
+  padding: 24rpx; 
+}
+.item-wrap image{
+  width: 200rpx;
+  height: 270rpx;
+  margin-bottom: 20rpx;
+}
+.item-wrap > text{
+  display: block;
+  width: 200rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap; 
+  margin-bottom: 16rpx;
+}
+
+

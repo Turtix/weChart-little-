@@ -1,0 +1,5 @@
+/* pages/layout/movies/index.wxss */
+@import './template/row/index';
+.movies-wrap{
+  background-color: #f2f2f2;
+}

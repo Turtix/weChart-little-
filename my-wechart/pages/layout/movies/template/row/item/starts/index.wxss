@@ -1,0 +1,17 @@
+.stars-wrap{
+  display: inline-flex;
+}
+.stars-wrap .stars{
+  display: flex;
+  margin-right: 24rpx;
+  margin-top: 3rpx;
+}
+.stars-wrap .stars image{
+  width: 24rpx;
+  height: 24rpx;
+  margin-right: 3rpx;
+}
+.stars-wrap .score{
+  color: #1f3463;
+  font-size: 32rpx;
+}
